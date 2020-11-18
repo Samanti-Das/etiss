@@ -1,29 +1,20 @@
-2020-11-18 08:18:54,980 - CITesterLogger - INFO - Plugin loader has been successfully registered
-2020-11-18 08:18:54,981 - CITesterLogger - INFO - Plugin: Or1kArchGDBTester is loaded
-2020-11-18 08:18:54,981 - CITesterLogger - INFO - Plugin: RiscvArchGDBTester is loaded
-2020-11-18 08:18:54,981 - CITesterLogger - INFO - Plugin: Or1kArchGDBTester is filtered out by predefined filter
-2020-11-18 08:18:54,981 - CITesterLogger - INFO - Plugin: RiscvArchGDBTester is filtered out by predefined filter
-2020-11-18 08:18:54,981 - CITesterLogger - WARNING - Plugin loading in module: GDBTesters is skipped
-2020-11-18 08:18:54,990 - CITesterLogger - INFO - Plugin: Or1kArchTester is loaded
-2020-11-18 08:18:54,990 - CITesterLogger - INFO - Plugin: Or1kLLVMJITTester is loaded
-2020-11-18 08:18:54,990 - CITesterLogger - INFO - Plugin: Or1kTCCJITTester is loaded
-2020-11-18 08:18:54,990 - CITesterLogger - INFO - Plugin: Or1kArchTester is filtered out by predefined filter
-2020-11-18 08:18:54,990 - CITesterLogger - INFO - Plugin: Or1kLLVMJITTester is filtered out by predefined filter
-2020-11-18 08:18:54,990 - CITesterLogger - INFO - Plugin: Or1kTCCJITTester is filtered out by predefined filter
-2020-11-18 08:18:54,990 - CITesterLogger - WARNING - Plugin loading in module: Or1kTesters  is skipped
-2020-11-18 08:18:54,992 - CITesterLogger - INFO - Plugin: RiscvArchTester is loaded
-2020-11-18 08:18:54,992 - CITesterLogger - INFO - Plugin: RiscvLLVMJITTester is loaded
-2020-11-18 08:18:54,992 - CITesterLogger - INFO - Plugin: RiscvTCCJITTester is loaded
-2020-11-18 08:18:54,992 - CITesterLogger - INFO - Plugin loading in module: RiscvTesters is finished
-2020-11-18 08:18:54,993 - CITesterLogger - WARNING - Module: testScript in plugin directory is not a plugin
-2020-11-18 08:18:54,993 - CITesterLogger - WARNING - Plugin loading in module: testScript is skipped
-2020-11-18 08:18:54,993 - CITesterLogger - INFO - [1m[94m
+2020-11-18 08:30:23,508 - CITesterLogger - INFO - Plugin loader has been successfully registered
+2020-11-18 08:30:23,509 - CITesterLogger - INFO - Plugin: Or1kArchGDBTester is loaded
+2020-11-18 08:30:23,509 - CITesterLogger - INFO - Plugin: RiscvArchGDBTester is loaded
+2020-11-18 08:30:23,509 - CITesterLogger - INFO - Plugin: Or1kArchGDBTester is filtered out by predefined filter
+2020-11-18 08:30:23,509 - CITesterLogger - INFO - Plugin: RiscvArchGDBTester is filtered out by predefined filter
+2020-11-18 08:30:23,509 - CITesterLogger - WARNING - Plugin loading in module: GDBTesters is skipped
+2020-11-18 08:30:23,515 - CITesterLogger - INFO - Plugin: Or1kArchTester is loaded
+2020-11-18 08:30:23,516 - CITesterLogger - INFO - Plugin: Or1kLLVMJITTester is loaded
+2020-11-18 08:30:23,516 - CITesterLogger - INFO - Plugin: Or1kTCCJITTester is loaded
+2020-11-18 08:30:23,516 - CITesterLogger - INFO - Plugin loading in module: Or1kTesters  is finished
+2020-11-18 08:30:23,516 - CITesterLogger - INFO - Plugin: RiscvArchTester is loaded
+2020-11-18 08:30:23,516 - CITesterLogger - INFO - Plugin: RiscvLLVMJITTester is loaded
+2020-11-18 08:30:23,516 - CITesterLogger - INFO - Plugin: RiscvTCCJITTester is loaded
+2020-11-18 08:30:23,516 - CITesterLogger - INFO - Plugin loading in module: RiscvTesters is finished
+2020-11-18 08:30:23,517 - CITesterLogger - WARNING - Module: testScript in plugin directory is not a plugin
+2020-11-18 08:30:23,517 - CITesterLogger - WARNING - Plugin loading in module: testScript is skipped
+2020-11-18 08:30:23,517 - CITesterLogger - INFO - [1m[94m
 
 ==============     Tester starts     ==============
 [0m
-2020-11-18 08:18:54,995 - CITesterLogger - INFO - Enter the directory: /nas/ei/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/examples/install/examples/bare_etiss_processor
-2020-11-18 08:18:55,003 - CITesterLogger - INFO - RISCV architecture simulator has been correctly configured
-2020-11-18 08:18:55,004 - CITesterLogger - INFO - Enter the directory: /nas/ei/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/examples/SW/install/examples/SW/riscv
-2020-11-18 08:18:55,009 - CITesterLogger - ERROR - make: *** No targets specified and no makefile found.  Stop.
-2020-11-18 08:18:55,009 - CITesterLogger - INFO - 
-2020-11-18 08:18:55,009 - CITesterLogger - CRITICAL - RISCV Software compilation fails

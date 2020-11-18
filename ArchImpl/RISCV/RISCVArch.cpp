@@ -317,7 +317,7 @@ static InstructionDefinition auipc_rd_imm(
  		etiss_uint32 rd = 0;
  		static BitArrayRange R_rd_0 (11,7);
  		etiss_uint32 rd_0 = R_rd_0.read(ba);
- 		rd += rd_0;
+ 		rd -= rd_0;
  		etiss_int32 imm = 0;
  		static BitArrayRange R_imm_12 (31,12);
  		etiss_int32 imm_12 = R_imm_12.read(ba);
