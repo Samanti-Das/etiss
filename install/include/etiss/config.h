@@ -83,7 +83,7 @@
 
 #define ETISS_USE_POSIX_SOCKET 1
 
-#define ETISS_INSTALL_DIR "/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install"
+#define ETISS_INSTALL_DIR "/home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install"
 
 #define ETISS_USE_CONSTEXPR 1
 

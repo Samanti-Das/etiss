@@ -1,7 +1,7 @@
 #!/bin/bash
-
+set -e  #quits the exe of script
 # Config
-ETISS_DIR=/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/
+ETISS_DIR=/home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install/
 
 
 # Clear tmp file

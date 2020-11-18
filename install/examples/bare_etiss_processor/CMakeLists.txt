@@ -4,7 +4,7 @@ project(bare_etiss_processor)
 
 # may not be needed if ETISS was installed into the default directory (e.g. /usr/... for linux or "C:\Program Files\..." for windows)
 # if ETISS cannot be found search for the file ETISSConfig.cmake
-set(ETISS_DIR "/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/lib/CMake/ETISS")
+set(ETISS_DIR "/home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install/lib/CMake/ETISS")
 set(CMAKE_CXX_LINK_FLAGS "")
 
 #NOTE: etiss NEEDS at least the c++0x standard as implemented by gcc. C++11 recommended. the compiler used here must be the same as the compiler used for etiss. 

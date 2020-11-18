@@ -317,7 +317,7 @@ static InstructionDefinition auipc_rd_imm(
  		etiss_uint32 rd = 0;
  		static BitArrayRange R_rd_0 (11,7);
  		etiss_uint32 rd_0 = R_rd_0.read(ba);
- 		rd -= rd_0;
+ 		rd += rd_0;
  		etiss_int32 imm = 0;
  		static BitArrayRange R_imm_12 (31,12);
  		etiss_int32 imm_12 = R_imm_12.read(ba);
@@ -351,7 +351,7 @@ static InstructionDefinition auipc_rd_imm(
 	"{\n"
 		"cast_0 =0x0 + (etiss_uint32)cast_0 ;\n"
 	"}\n"
-	"*((RISCV)cpu)->X[" + toString(rd) + "] = (etiss_int32)cast_0 + " + toString(imm) + ";\n"
+	"*((RISCV*)cpu)->X[" + toString(rd) + "] = (etiss_int32)cast_0 + " + toString(imm) + ";\n"
 	#if RISCV_DEBUG_CALL
 	"printf(\"*((RISCV*)cpu)->X[" + toString(rd) + "] = %#x\\n\",*((RISCV*)cpu)->X[" + toString(rd) + "]); \n"
 	#endif	

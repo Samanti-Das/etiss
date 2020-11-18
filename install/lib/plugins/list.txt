@@ -1,5 +1,5 @@
-OR1KArch,/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/lib/plugins,OR1KArch
-RISCV,/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/lib/plugins,RISCV
-RISCV64,/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/lib/plugins,RISCV64
-GCCJIT,/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/lib/plugins,GCCJIT
-TCCJIT,/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/lib/plugins,TCCJIT
+OR1KArch,/home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install/lib/plugins,OR1KArch
+RISCV,/home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install/lib/plugins,RISCV
+RISCV64,/home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install/lib/plugins,RISCV64
+GCCJIT,/home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install/lib/plugins,GCCJIT
+TCCJIT,/home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install/lib/plugins,TCCJIT

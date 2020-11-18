@@ -74,8 +74,8 @@ endif
 # The object and executable files will be put in the obj and build 
 # subdirectories, respectively.
 
-SW_DIR = /home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/examples/SW/test_cases/
-SW_DIR_OR1K = /home/ge75guy/Desktop/ETISS_CI_SD/etiss/install/examples/SW/or1k/
+SW_DIR = /home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install/examples/SW/test_cases/
+SW_DIR_OR1K = /home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install/examples/SW/or1k/
 
 BUILD_DIR = ./build/
 OBJECT_DIR = ./obj/

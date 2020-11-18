@@ -16,7 +16,7 @@ then
     echo "E.g. cmake -B ${BUILD} -S . -DCMAKE_BUILD_TYPE=Debug ; cmake --build ${BUILD}"
 fi
 
-export ETISS_DIR=/home/ge75guy/Desktop/ETISS_CI_SD/etiss/install
+export ETISS_DIR=/home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install
 case `uname` in
 
     MINGW*)
