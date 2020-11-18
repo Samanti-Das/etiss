@@ -351,7 +351,7 @@ static InstructionDefinition auipc_rd_imm(
 	"{\n"
 		"cast_0 =0x0 + (etiss_uint32)cast_0 ;\n"
 	"}\n"
-	"*((RISCV*)cpu)->X[" + toString(rd) + "] = (etiss_int32)cast_0 + " + toString(imm) + ";\n"
+	"*((RISCV)cpu)->X[" + toString(rd) + "] = (etiss_int32)cast_0 + " + toString(imm) + ";\n"
 	#if RISCV_DEBUG_CALL
 	"printf(\"*((RISCV*)cpu)->X[" + toString(rd) + "] = %#x\\n\",*((RISCV*)cpu)->X[" + toString(rd) + "]); \n"
 	#endif	
