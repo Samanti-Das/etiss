@@ -1,7 +1,7 @@
 #!/bin/bash
-set -e  #quits the exe of script
+
 # Config
-ETISS_DIR=/home/ge75guy/Desktop/ETISS_CI_SD/etiss_old/install/
+ETISS_DIR=/nas/ei/share/TUEIEDAprojects/SystemDesign/work/etiss-ci/etiss/install/
 
 
 # Clear tmp file
@@ -108,7 +108,7 @@ fi
 if [ "${USE_GDB}" -eq 1 ]; then
     gdb --args ${VP_EXE} ${ARGS}
 else
-    ${VP_EXE} 
+    ${VP_EXE} ${ARGS}
 fi
 
 rm $DYN_INI
