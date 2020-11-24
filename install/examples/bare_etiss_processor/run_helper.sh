@@ -108,7 +108,7 @@ fi
 if [ "${USE_GDB}" -eq 1 ]; then
     gdb --args ${VP_EXE} ${ARGS}
 else
-    ${VP_EXE} ${ARGS}
+    ${VP_EXE} 
 fi
 
 rm $DYN_INI
