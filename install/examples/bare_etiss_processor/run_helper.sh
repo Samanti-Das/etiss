@@ -112,10 +112,4 @@ else
 fi
 
 rm $DYN_INI
-if jarsigner -verbose -keystore $keyst -keystore $pass $jar_file $kalias
-then
-    echo $jar_file signed sucessfully
-else
-    echo ERROR: Failed to sign $jar_file. Please recheck the variables 1>&2
-    exit 1
-fi
+
