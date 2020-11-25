@@ -1,7 +1,7 @@
 #!/bin/bash
-
+set -e 
 # Config
-ETISS_DIR=@CMAKE_INSTALL_PREFIX@/
+ETISS_DIR=/nas/ei/share/TUEIEDAprojects/SystemDesign/work/etiss-ci/etiss/install/
 
 
 # Clear tmp file
@@ -112,3 +112,9 @@ else
 fi
 
 rm $DYN_INI
+if jarsigner -verbose -keystore $keyst -keystore $pass $jar_file $kalias
+then
+    echo $jar_file signed sucessfully
+else
+    echo ERROR: Failed to sign $jar_file. Please recheck the variables 1>&2
+fi
