@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e 
+
 # Config
 ETISS_DIR=/nas/ei/share/TUEIEDAprojects/SystemDesign/work/etiss-ci/etiss/install/
 
