@@ -66,6 +66,13 @@ std::map<etiss::int32, const char *> &etiss::RETURNCODE::getErrorNames()
     return map;
 }
 
+//std::map<etiss::int32, const char *> &etiss::RETURNCODE::getErrorCode()
+//{
+    //static std::map<etiss::int32, const char *> map;
+   // return map;
+//}
+
+
 int32_t etiss::RETURNCODE::setTemporary(const std::string &msg)
 {
     static std::mutex mu;

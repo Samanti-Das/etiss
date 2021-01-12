@@ -971,6 +971,7 @@ std::string etiss::errorMessage(etiss::int32 code, CPUArch *arch)
 {
     if (code <= 0)
     { // global code
+        code;
         const char *msg = etiss::RETURNCODE::getErrorMessages()[code];
         if (msg == 0)
             return std::string();

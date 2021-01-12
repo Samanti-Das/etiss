@@ -529,7 +529,7 @@ static InstructionDefinition jalr_rd_rs1_imm(
 #if RISCV_DEBUG_CALL
 "printf(\"imm_extended = %#x\\n\",imm_extended); \n"
 #endif	
-"etiss_int32 cast_0 = *((RISCV*)cpu)->X[" + toString(rs1) + "]; \n"
+"etiss_int32 cast_1 = *((RISCV*)cpu)->X[" + toString(rs1) + "]; \n"
 "if((etiss_int32)((etiss_uint32)cast_0 - 0x80000000) > 0x0)\n"
 "{\n"
 	"cast_0 =0x0 + (etiss_uint32)cast_0 ;\n"

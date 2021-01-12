@@ -77,11 +77,12 @@ do
         JIT="GCCJIT"
     elif [ "$arg" = "llvm" ]; then
         JIT="LLVMJIT"
+    
     elif [ "$arg" = "rv64" ]; then
         ARCH="RISCV64"
     elif [ "$arg" = "vp" ]; then
         VP_EXE="$2"
-        shift
+        
     else
         CMD_OPTIONS="${CMD_OPTIONS} ${arg}"
     fi
@@ -112,4 +113,4 @@ else
     ${VP_EXE} ${ARGS} ${CMD_OPTIONS}
 fi
 
-rm $DYN_INI
+#rm $DYN_INI

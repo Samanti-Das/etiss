@@ -793,6 +793,7 @@ etiss::int32 CPUCore::execute(ETISS_System &_system)
                                << cpu_->instructionPointer << std::dec << ": no translated code available" << std::endl;
                         etiss::log(etiss::WARNING, stream.str());
                         exception = RETURNCODE::JITCOMPILATIONERROR;
+                        return RETURNCODE::JITCOMPILATIONERROR;
                         goto loopexit;
                     }
                 }
