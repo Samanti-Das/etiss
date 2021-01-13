@@ -1,5 +1,0 @@
-OR1KArch,/nas/ei/share/TUEIEDAprojects/SystemDesign/work/etiss-ci/etiss/install/lib/plugins,OR1KArch
-RISCV,/nas/ei/share/TUEIEDAprojects/SystemDesign/work/etiss-ci/etiss/install/lib/plugins,RISCV
-RISCV64,/nas/ei/share/TUEIEDAprojects/SystemDesign/work/etiss-ci/etiss/install/lib/plugins,RISCV64
-GCCJIT,/nas/ei/share/TUEIEDAprojects/SystemDesign/work/etiss-ci/etiss/install/lib/plugins,GCCJIT
-TCCJIT,/nas/ei/share/TUEIEDAprojects/SystemDesign/work/etiss-ci/etiss/install/lib/plugins,TCCJIT
