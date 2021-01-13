@@ -174,13 +174,96 @@ int main(int argc, const char *argv[])
               << etiss::RETURNCODE::getErrorMessages()[exception] << std::endl;
     
 
-    if (exception == etiss::RETURNCODE::CPUFINISHED || exception == etiss::RETURNCODE::NOERROR || exception == etiss::RETURNCODE::CPUTERMINATED)
-     return 0;
-    else if (exception == etiss::RETURNCODE::DBUS_READ_ERROR || exception == etiss::RETURNCODE::DBUS_WRITE_ERROR || exception == etiss::RETURNCODE::IBUS_READ_ERROR || exception == etiss::RETURNCODE::IBUS_WRITE_ERROR || exception == etiss::RETURNCODE:: INTERRUPT || exception == etiss::RETURNCODE::RESET || exception == etiss::RETURNCODE::ILLEGALINSTRUCTION || exception == etiss::RETURNCODE::ILLEGALJUMP || exception == etiss::RETURNCODE::INSTR_PAGEFAULT || exception == etiss::RETURNCODE::LOAD_PAGEFAULT || exception == etiss::RETURNCODE::STORE_PAGEFAULT || exception == etiss::RETURNCODE::GDBNOERROR || exception == etiss::RETURNCODE::SYSCALL || exception == etiss::RETURNCODE::PAGEFAULT)
-      return 1;
-    else if (exception == etiss::RETURNCODE::JITERROR || exception == etiss::RETURNCODE::JITCOMPILATIONERROR)
-      return 2;
-    else
-      return 3;
+    // if (exception == etiss::RETURNCODE::CPUFINISHED || exception == etiss::RETURNCODE::NOERROR || exception == etiss::RETURNCODE::CPUTERMINATED)
+    //  return 0;
+    // else if (exception == etiss::RETURNCODE::DBUS_READ_ERROR || exception == etiss::RETURNCODE::DBUS_WRITE_ERROR || exception == etiss::RETURNCODE::IBUS_READ_ERROR || exception == etiss::RETURNCODE::IBUS_WRITE_ERROR || exception == etiss::RETURNCODE:: INTERRUPT || exception == etiss::RETURNCODE::RESET || exception == etiss::RETURNCODE::ILLEGALINSTRUCTION || exception == etiss::RETURNCODE::ILLEGALJUMP || exception == etiss::RETURNCODE::INSTR_PAGEFAULT || exception == etiss::RETURNCODE::LOAD_PAGEFAULT || exception == etiss::RETURNCODE::STORE_PAGEFAULT || exception == etiss::RETURNCODE::GDBNOERROR || exception == etiss::RETURNCODE::SYSCALL || exception == etiss::RETURNCODE::PAGEFAULT)
+    //   return 1;
+    // else if (exception == etiss::RETURNCODE::JITERROR || exception == etiss::RETURNCODE::JITCOMPILATIONERROR)
+    //   return 2;
+    // else
+    //   return 3;
+
+    switch(exception){
+        case etiss::RETURNCODE::CPUFINISHED:
+        return 0;
+        break;
+        case etiss::RETURNCODE::NOERROR:
+        return 0;
+        break;
+        case etiss::RETURNCODE::CPUTERMINATED:
+        return 0;
+        break;
+        case etiss::RETURNCODE::DBUS_READ_ERROR:
+        return 1;
+        break;
+        case etiss::RETURNCODE::DBUS_WRITE_ERROR:
+        return 1;
+        break;
+        case etiss::RETURNCODE::IBUS_READ_ERROR:
+        return 1;
+        break;
+        case etiss::RETURNCODE::IBUS_WRITE_ERROR:
+        return 1;
+        break;
+        case etiss::RETURNCODE::INTERRUPT:
+        return 1;
+        break;
+        case etiss::RETURNCODE::RESET:
+        return 1;
+        break;
+        case etiss::RETURNCODE::ILLEGALINSTRUCTION:
+        return 1;
+        break;
+        case etiss::RETURNCODE::ILLEGALJUMP:
+        return 1;
+        break;
+        case etiss::RETURNCODE::INSTR_PAGEFAULT:
+        return 1;
+        break;
+        case etiss::RETURNCODE::LOAD_PAGEFAULT:
+        return 1;
+        break;
+        case etiss::RETURNCODE::STORE_PAGEFAULT:
+        return 1;
+        break;
+        case etiss::RETURNCODE::GDBNOERROR:
+        return 1;
+        break;
+        case etiss::RETURNCODE::SYSCALL:
+        return 1;
+        break;
+        case etiss::RETURNCODE::PAGEFAULT:
+        return 1;
+        break;
+        case etiss::RETURNCODE::JITERROR:
+        return 2;
+        break;
+        case etiss::RETURNCODE::JITCOMPILATIONERROR:
+        return 2;
+        break;
+        case etiss::RETURNCODE::GENERALERROR:
+        return 3;
+        break;
+        case etiss::RETURNCODE::RELOADBLOCKS:
+        return 3;
+        break;
+        case etiss::RETURNCODE::RELOADCURRENTBLOCK:
+        return 3;
+        break;
+        case etiss::RETURNCODE::BREAKPOINT:
+        return 3;
+        break;
+        case etiss::RETURNCODE::ARCHERROR:
+        return 3;
+        break;
+        case etiss::RETURNCODE::EMULATIONNOTSUPPORTED:
+        return 3;
+        break;
+        case etiss::RETURNCODE::INVALIDSYSTEM:
+        return 3;
+        break;
+        default:
+        return -1;
+    }
               //<< etiss::RETURNCODE::getErrorNames()[exception]<< std::endl;
 }
