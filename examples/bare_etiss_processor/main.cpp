@@ -174,7 +174,13 @@ int main(int argc, const char *argv[])
               << etiss::RETURNCODE::getErrorMessages()[exception] << std::endl;
     
 
-    if (exception!= etiss::RETURNCODE::CPUFINISHED)
-     return -1;
+    if (exception == etiss::RETURNCODE::CPUFINISHED || exception == etiss::RETURNCODE::NOERROR || exception == etiss::RETURNCODE::CPUTERMINATED)
+     return 0;
+    else if (exception == etiss::RETURNCODE::DBUS_READ_ERROR || exception == etiss::RETURNCODE::DBUS_WRITE_ERROR || exception == etiss::RETURNCODE::IBUS_READ_ERROR || exception == etiss::RETURNCODE::IBUS_WRITE_ERROR || exception == etiss::RETURNCODE:: INTERRUPT || exception == etiss::RETURNCODE::RESET || exception == etiss::RETURNCODE::ILLEGALINSTRUCTION || exception == etiss::RETURNCODE::ILLEGALJUMP || exception == etiss::RETURNCODE::INSTR_PAGEFAULT || exception == etiss::RETURNCODE::LOAD_PAGEFAULT || exception == etiss::RETURNCODE::STORE_PAGEFAULT || exception == etiss::RETURNCODE::GDBNOERROR || exception == etiss::RETURNCODE::SYSCALL || exception == etiss::RETURNCODE::PAGEFAULT)
+      return 1;
+    else if (exception == etiss::RETURNCODE::JITERROR || exception == etiss::RETURNCODE::JITCOMPILATIONERROR)
+      return 2;
+    else
+      return 3;
               //<< etiss::RETURNCODE::getErrorNames()[exception]<< std::endl;
 }
